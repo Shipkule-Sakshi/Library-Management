@@ -1,0 +1,22 @@
+<!-- Search Box & Logout -->
+<div class="search-logout">
+  <div class="search-box">
+    <input type="text" placeholder="Search" [(ngModel)]="searchQuery">
+    <button (click)="onSearch()">Search</button>
+  </div>
+  <div class="nav-buttons">
+    <button id="logoutBtn" class="btn-primary" (click)="logout()">Logout</button>
+  </div>
+</div>
+
+<!-- Main Welcome Content -->
+<div class="container welcome-container">
+  <h1>📚 Welcome to the Library 📚</h1>
+  <p>Explore a wide range of books, register to borrow, and enjoy your reading journey!</p>
+
+  <div class="welcome-buttons">
+    <a routerLink="/register" routerLinkActive="active" class="btn-primary">Register Now</a>
+
+    <a routerLink="/about" routerLinkActive="active" class="btn-secondary">Learn More</a>
+  </div>
+</div>

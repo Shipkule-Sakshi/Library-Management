@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <div class="add-books-container">
+    <h2>Add a New Book</h2>
+
+    <form (ngSubmit)="addBook()">
+      <label for="bookName">Book Name:</label>
+      <input type="text" id="bookName" [(ngModel)]="bookName" name="bookName" required />
+
+      <label for="author">Author:</label>
+      <input type="text" id="author" [(ngModel)]="author" name="author" required />
+
+      <label>Type:</label>
+      <div class="radio-group">
+        <input type="radio" id="fiction" name="type" value="Fiction" [(ngModel)]="type" /> 
+        <label for="fiction">Fiction</label>
+
+        <input type="radio" id="nonfiction" name="type" value="Non-Fiction" [(ngModel)]="type" /> 
+        <label for="nonfiction">Non-Fiction</label>
+
+        <input type="radio" id="academic" name="type" value="Academic or Technical" [(ngModel)]="type" /> 
+        <label for="academic">Academic or Technical</label>
+      </div>
+
+      <button type="submit">Add Book</button>
+    </form>
+
+    <hr />
+
+    <h3>Search Books</h3>
+    <input type="text" placeholder="Search by name or author" [(ngModel)]="searchQuery" (input)="searchBooks()" />
+
+    <div *ngIf="filteredBooks.length === 0">No books found.</div>
+
+    <ul>
+      <li *ngFor="let book of filteredBooks">
+        <strong>{{ book.name }}</strong> by {{ book.author }} — {{ book.type }}
+      </li>
+    </ul>
+  </div>
+</div>

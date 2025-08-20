@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>🏫 Faculty Login</h2>
+
+  <!-- Login Form -->
+  <form (submit)="login($event)">
+    <label for="email">📧 Email or Username</label>
+    <input type="text" id="email" name="email" [(ngModel)]="email" placeholder="✏️ Enter your email or username" required>
+
+    <label for="password">🔑 Password</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password" placeholder="🔒 Enter password" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- Forgot Password link outside the form -->
+  <div class="forgot-password">
+    <a href="#" (click)="goToForgotPassword($event)">❓ Forgot Password?</a>
+  </div>
+</div>

@@ -1,0 +1,130 @@
+/* Full-page background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(16, 56, 116, 0.6), rgba(229, 218, 100, 0.6)),
+              url('/assets/library-background1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Wrapper to center content */
+.wrapper {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  padding: 40px 20px;      /* vertical spacing */
+}
+
+/* Add Books Form Container */
+.add-books-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* Form Title */
+.add-books-container h2 {
+  margin-bottom: 25px;
+  color: #1e3d59;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Labels */
+.add-books-container label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Inputs */
+.add-books-container input[type="text"],
+.add-books-container input[type="number"],
+.add-books-container input[placeholder] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus Effect */
+.add-books-container input:focus {
+  border-color: #1d8bec;
+  box-shadow: 0 0 5px rgba(29, 139, 236, 0.5);
+  outline: none;
+}
+
+/* Submit Button */
+.add-books-container button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #1d8bec;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-books-container button:hover {
+  background-color: #105cbf;
+  transform: translateY(-2px);
+}
+
+/* Book List */
+.add-books-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.add-books-container li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .add-books-container {
+    padding: 20px;
+  }
+
+  .add-books-container h2 {
+    font-size: 22px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

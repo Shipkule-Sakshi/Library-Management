@@ -1,0 +1,82 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: center; /* center links horizontally */
+  background-color: #e8eccafa;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px #31d6681a;
+}
+
+/* Navbar links default */
+.nav-links a {
+  text-decoration: none;
+  color: #333;         /* normal gray */
+  font-weight: normal; /* not bold */
+  padding: 5px 10px;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Active/current page link */
+.nav-links a.active {
+  color: #007bff;      /* blue */
+  font-weight: bold;   /* bold */
+}
+
+
+/* Logo container */
+.logo {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Background image slideshow using pseudo-element */
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  animation: slideBackground 12s infinite;
+}
+
+/* Sliding color overlay */
+.color-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  animation: slideColors 12s infinite ease-in-out;
+  mix-blend-mode: overlay; /* optional for blending with image */
+}
+
+/* Keyframes for background images */
+@keyframes slideBackground {
+  0%   { background-image: url('/assets/background.jpg'); }
+  33%  { background-image: url('/assets/background2.jpg'); }
+  66%  { background-image: url('/assets/background3.jpg'); }
+  100% { background-image: url('/assets/library-background.jpg'); }
+}
+
+/* Keyframes for sliding colors */
+@keyframes slideColors {
+  0%   { background-color: rgba(255,77,77,0.4); }   /* semi-transparent red */
+  25%  { background-color: rgba(77,121,255,0.4); }  /* blue */
+  50%  { background-color: rgba(77,255,136,0.4); }  /* green */
+  75%  { background-color: rgba(255,204,51,0.4); }  /* yellow */
+  100% { background-color: rgba(255,77,77,0.4); }
+}

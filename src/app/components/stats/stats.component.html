@@ -1,0 +1,41 @@
+<h2 style="text-align: center;">📊 Registered Users Statistics</h2>
+
+<div style="margin: 20px 0;">
+  <p>🎓 Total Students: <strong>{{ totalStudents }}</strong></p>
+  <p>👨‍🏫 Total Faculties: <strong>{{ totalFaculties }}</strong></p>
+</div>
+
+<hr />
+
+<h3 style="margin-top: 20px;">Registered Users List</h3>
+
+<table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+  <thead>
+    <tr style="background-color: #1e3d59; color: white;">
+      <th style="padding: 10px; text-align: left;">👤 Full Name</th>
+      <th style="padding: 10px; text-align: left;">📧 Email</th>
+      <th style="padding: 10px; text-align: left;">🎭 Role</th>
+      <th style="padding: 10px; text-align: left;">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of registrations" style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">
+        <input [(ngModel)]="user.fullname" />
+      </td>
+      <td style="padding: 10px;">
+        <input [(ngModel)]="user.email" />
+      </td>
+      <td style="padding: 10px;">
+        <select [(ngModel)]="user.role">
+          <option value="Student">Student</option>
+          <option value="Faculty">Faculty</option>
+        </select>
+      </td>
+      <td style="padding: 10px;">
+        <button (click)="saveUser(user)">💾 Save</button>
+        <button (click)="removeUser(user.id)">🗑 Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

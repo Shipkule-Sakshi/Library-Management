@@ -1,0 +1,115 @@
+/* Reset + Body */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f9 url('/assets/background3.jpg') no-repeat center center fixed;
+    background-size: cover; /* make image cover full screen */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #167dd8;
+    padding: 12px 25px;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+    color: #ff6e40;
+}
+
+/* Container box */
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    background-color: rgba(255, 255, 255, 0.95); /* semi-transparent white */
+    backdrop-filter: blur(4px); /* adds a soft glass effect */
+}
+
+/* Headings */
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1d8bec;
+    font-size: 22px;
+}
+
+/* Form labels and inputs */
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    border-color: #1d8bec;
+    box-shadow: 0 0 5px rgba(29, 139, 236, 0.4);
+    outline: none;
+}
+
+/* Forgot password link */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 18px;
+}
+
+.forgot-password a {
+    color: #3461df;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #ff6e40;
+}
+
+/* Buttons */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #405dff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #ff6e40;
+    transform: translateY(-2px);
+}

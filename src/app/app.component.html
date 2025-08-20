@@ -1,0 +1,24 @@
+<!-- app.component.html -->
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-links">
+    <a routerLink="/home" routerLinkActive="active">🏠 Home</a>
+    <a routerLink="/about" routerLinkActive="active">ℹ️ About</a>
+    <a routerLink="/register" routerLinkActive="active">📝 Register</a>
+    <a routerLink="/student-login" routerLinkActive="active">🎓 Student Login</a>
+    <a routerLink="/faculty-login" routerLinkActive="active">👨‍🏫 Faculty Login</a>
+    <a routerLink="/add-books" routerLinkActive="active">➕ Add Books</a>
+    <a routerLink="/stats" routerLinkActive="active">📊 Stats</a>
+   
+  </div>
+</nav>
+
+<!-- Logo with color overlay (appears on all pages) -->
+<div class="logo">
+  📚 Book Library
+  <div class="color-overlay"></div>
+</div>
+
+<!-- Main content for routed components -->
+<router-outlet></router-outlet>
