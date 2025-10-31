@@ -226,9 +226,10 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 
 <img width="1896" height="914" alt="Screenshot 2025-08-20 144929" src="https://github.com/user-attachments/assets/b7d2f41e-cd32-49e7-8576-852728aab610" />
 
-## 7)📊  Registered Users Statistics OR Registered Users List :-
+## 7)📊  Registered Users Statistics  :-
 
-<img width="1869" height="920" alt="Screenshot 2025-08-20 145140" src="https://github.com/user-attachments/assets/ab5c9c2e-c1b5-42f3-b9d3-c33a01a9597e" />
+<img width="1904" height="910" alt="Screenshot 2025-10-31 153123" src="https://github.com/user-attachments/assets/da75c558-676a-49b7-92fe-ddb5d389dd9f" />
+
 
 # ⭐ Thank You for Visiting!
 
