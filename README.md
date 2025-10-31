@@ -188,9 +188,13 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 
 ***If you have any questions or feedback, feel free to reach out:***
 
-**Sakshi Shipkule**
+**1) Shipkule Sakshi**
+**2) More Prajkta**
+**3) Thorat Shruti**
 
-📧 Email: shipkulesakshi682@gmail.com
+**📧 Email: shipkulesakshi682@gmail.com
+           prajktamore63@gmail.com
+           shrutithorat767@gmail.com**
 
 🌐 GitHub: (https://github.com/Shipkule-Sakshi).
 
